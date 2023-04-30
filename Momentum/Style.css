@@ -1,0 +1,398 @@
+/*removes the padding and margins, border-box accounts for any border and padding in the value of the element's width and height 
+{
+    
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+*/
+
+/*if the user's arrow has selected a text block, it will turn green */
+input:focus, select:focus, textarea:focus { 
+    background-color: rgb(220, 255, 220);
+}
+
+/* setting my book element as a flex box by centering them, setting up the margins, and so on */
+.container4{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    margin: 40px 20px 0 20px;
+}
+
+/*this is the div that appears within my container4 flexbox, where each row of books was own div, I made it a flex box  */
+.container4 .section{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+
+
+/*helps to align the book images to appear directly in the middle, and the book images will be 100% of its containing block */
+.section img {
+ margin-top: 10px;
+ vertical-align: middle;
+ width: 100%;
+    
+}
+
+
+
+
+/*design for the h1 */
+
+h1{
+    color:#B1624EFF;
+   text-align:center;
+}
+
+/*this is the design for my motto that appears on my home page */
+p.subtitle {
+    font-family:Helvetica;
+    color:black;
+    text-align:center;
+    font-size:1.5em; 
+}
+
+
+/* sets the background color of the website to be blue */
+body {
+    margin:0px;
+    padding:0;
+    background:#DEF4FE;
+}
+
+/*the table will always take 100% of the width */
+
+.table {
+  width:100%;
+ 
+    
+    
+}
+
+/*this is the design that makes the frame around my table a purple, solid color */
+
+.table td,.table th {
+    
+
+    border:5px solid #845EC2;
+    text-align:center;
+}
+
+/*sets the background color of the table header to purple */
+.table th {
+    
+    background-color:#845EC2;
+}
+
+
+
+
+/* makes the navigation menu a flexbox, and line up each link side by side, and sets the color to purple */
+.navigationmenu {
+    display:flex;
+    justify-content: space-between;
+    background-color: #845EC2;
+    color:black;
+    text-align: center;
+    
+    
+}
+
+/*increased font size and sets up some margin away from the end of the screen for the Momentum title, set the margin to .5 root element's font size*/
+.title {
+    font-size: 2.0rem;
+    margin: .5rem
+        
+        
+}
+
+/*removes margin and pading, and makes the links flex */
+.navmenulinks ul {
+    margin:0;
+    display:flex;
+    padding:0;
+}
+
+/* removes the text decoration from the links */
+.navmenulinks li {
+    list-style:none;
+}
+
+
+
+/*sets the font color, text-decoration, pading in between, and sets the a tags right beside each other  for the lisst items, and makes them a block element so it occupies the entire horizontal space*/
+.navmenulinks li a {
+   color:black;
+    text-decoration:underline;
+    padding:1.5rem;
+    display:block;
+}
+
+/*when the user hovers over the link, this light purple color will show up */
+.navmenulinks li:hover {
+    background:#4E8397;
+}
+
+
+
+/*this sets up the design of my testimonials, and determines the border, and rounds out the corners  */
+
+.container {
+  border: 3px solid #ccc;
+  background-color:#FFC0CB;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/*sets up the design for the images of the testimonials, floats them to the left, and makes them round */
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 45%;
+}
+
+
+/*this is the class for my center image on my homepage of the college students for it to always take a width of 100% and for the height to adjust automatically. This helps make it responsive */
+.responsive {
+    width:100%;
+    height:auto;
+}
+
+
+/*this sets up the design for my multimedia(video) on the homepage */
+video{
+    max-width:100%;
+    height:auto;
+}
+
+
+/*style for mobile devices */
+@media only screen and (max-width: 480px) {
+    /*this sets up the design for my book images, if the website is being viewed on mobile, it will allow the images to wrap onto the next line and show up as a column rather than a row to make it responsive*/
+    
+    
+     .container4 .section{
+   
+         flex-wrap:wrap;
+           flex-direction:column;
+    }
+    
+    
+   
+
+/* this is the class for my graduation image on my login page, it will make the picture have a width of 100% and the height should adjust */
+    .Picture {
+   width: 100%;
+    height:auto;
+}
+    
+    
+    
+    .navmenulinks {
+        display:flex; 
+        width:100%;
+        
+
+    }
+    
+    /*sets the titles links at the start of the menu */
+    .navigationmenu {
+        align-items:flex-start;
+        flex-direction:column;
+       
+    }
+    
+    /*the links will stack on top of each other and will be spanning 100% of the width */
+    .navmenulinks ul {
+        width:100%;
+        flex-direction:column;
+    }
+    
+    /*the text will be in the center, and span 100% of the width */
+    .navmenulinks li {
+        text-align:center;
+        width:100%;
+    }
+    
+    
+    /* when the links are active, it should display flex */
+    .navemnulinks.active {
+        display:flex;
+        width:100%;
+        
+    }
+    
+    /*this centers my text and design of the testimonials if they appear on a mobile device */
+    .container {
+    text-align: center;
+  }
+    .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+    
+    /*this ensures that my table takes up 100% width, the header doesn't show up and that the lines of text appear as a block element and as rows, so that the table will appear right on mobile devices*/
+    .table {
+        width:100%;
+    }
+    .table thead {
+        display:none;
+    }
+    
+
+    .table,.table tbody, .table tr, .table td {
+        display:block;
+       
+        flex-direction:row;
+    }
+  
+        
+}
+
+   /*style for tablet */
+    
+    @media only screen and (min-width: 481px) {
+       
+        /*helps center the graduation image on the login page*/
+        .Picture {
+     width: 100%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+    height:auto;
+}
+
+
+    
+
+   .table {
+        width:100%;
+    }
+    
+       
+    
+    /*this just makes the font of the font span element a bit bigger and pushes the image a bit to the left for the testimonaials */ 
+      .container span {
+  font-size: 1.5em;
+  margin-right:10px;
+}
+        
+    /*this allows the book images to wrap onto the next line to make it responsive */
+    
+     .container4 .section{
+   
+    flex-wrap:wrap;
+        
+    }
+   
+         
+}
+        
+      
+    
+
+/*style for desktop */
+  @media only screen and (min-width:769px) {
+      
+      /*makes the direction of the book images into a row if the space allows it */
+      .container4 .section{
+   
+       flex-wrap:wrap;
+          flex-direction:row;
+        
+    }
+        
+
+      
+      /*displays the book images as flex */
+      .section img {
+    display: flex;  
+  flex-wrap: wrap;
+  }
+  
+ 
+     
+/*accounts for any border padding into the values specified for an element's width and heigh 
+{
+box-sizing:border-box;
+}
+*/
+
+
+      /*if the user is viewing the website on a desktop, it sizes the font and table to be bigger */
+  .table  {
+  font-size: 1.5em;
+
+}    
+
+      /*makes the username and password bigger for the desktop display of the login page */
+  #username  {
+  font-size: 2.0em;
+
+}
+      #password  {
+  font-size: 2.0em;
+
+}
+/*
+}
+*/
+
+/*end of desktop design */
+
+/*this is the code that helps to create a narrow screen vs.wide screen layout to make the advisor form form responsive */
+
+/*displays the div element within the form class as a flexbox and designates the top and bottom margins*/
+
+div.Form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+/*this sets the flex sizes of the objects that are the children of the Form class */
+div.Form > * {
+    -webkit-flex: 1 1 150px;
+    flex: 1 1 150px;
+   
+}
+/*this displays the advisor form its self as a flex box*/
+form#AdvisorForm {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+/*this helps to determine the font size, margin spaces, and padding of the advisor form */
+form#AdvisorForm > fieldset {
+    border-radius: 25px;
+    /*sets the flex size of the field set */ 
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    padding: 8px;
+    margin: 8px;
+   
+}
+
+
+
+
+
+
+
+    
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    
+    <meta charset = utf-8>
+    
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" href="Style.css">
+     <script src="pagestyles.js" defer></script>
+       </head>
+    
+    
+    <body>
+        
+        
+           <nav class="navigationmenu"> 
+        <div class="title">Momentum</div>
+           
+        <div class="navmenulinks"> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Books.html">Books</a></li>
+            <li><a href="Scholarships1.html">Scholarships</a></li>
+            <li><a href="Testimonials.html">Testimonials</a></li>
+            <li><a href="WebForm.html">Advisor Form</a></li>
+            <li><a href="Login.html">Sign Up</a></li>
+            
+            
+        </ul>
+    </div>
+        </nav>
+        
+        <h1>Student Advisor Form</h1>
+      <p>Thank you for taking the time to visit our site! If you want to get connected to one of our advisors, please input some information, so that we know how to best help you! </p>
+        
+    
+        
+         <form id=”AdvisorForm” >
+    <fieldset id="StudentInformation">
+        <legend>Student Information</legend>
+        <div class="Form">
+        <label for=”name2”>Student Name</label>
+<input name=”studentName” id=”name2” type=”text” required  />    </div>
+     <div class="Form">
+        <label for=”University”>University</label>
+<input name=”StudentUniversity” id=”university” type=”text” /> 
+        </div>
+        
+        
+<div class="Form">
+  <label for=”major”>Major</label>
+<input name=”StudentMajor” id=”major” type=”text”   /> 
+    </div>
+    <div class="Form">    
+    <label for=”phonenumber”>Student Phone Number</label>
+<input name=”StudentPhoneNumber” id=”phonenumber” type=”tel” pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+        </div>
+        
+            
+    <div class="Form">
+        
+        <label for=”E-Mail”>E-Mail</label>
+<input name=”StudentEmail” id=”E-Mail” type=”email” required/> 
+        </div>
+         <div class="Form">
+<label>Male or Female</label>   
+    <fieldset class="student">
+    <label for ="female">Female</label>
+    <input name="Gender" id="fYes" value="yes" type="radio"/>
+        <label for ="male">Male</label>
+        <input name="gender" id="fNo" value="no" type="radio"/>
+    
+    
+    </fieldset>
+             <br>
+                    <div class="Form">
+<label>Do you have a resume?</label>   
+    <fieldset class="student">
+    <label for ="rYes">Yes</label>
+    <input name="resume" id="resume" value="yes" type="radio"/>
+        <label for ="rNo">No</label>
+        <input name="resume" id="fNo" value="no" type="radio"/>
+    
+    
+    </fieldset>
+        
+        
+           </div>
+             
+            <br><br>
+      <!--allows a user to write a full comment -->
+        <div class="Form">
+<label>Have you had an internships?</label>   
+    <fieldset class="student">
+    <label for ="mYes">Yes</label>
+    <input name="internship" id="internship" value="yes" type="radio"/>
+        <label for ="mNo">No</label>
+        <input name="internship" id="mNo" value="no" type="radio"/>
+    
+    
+    </fieldset>
+        
+        
+           </div>
+             
+        
+      
+             </div>
+             
+        
+                  <center><input type="submit" value="Submit"/></center> 
+        <center><input type="reset" value="Cancel"/></center>
+             <fieldset id="StudentInformation">
+                 
+         <legend>We will get you connected to an advisor as soon as we can! </legend>
+         
+         </fieldset>
+          
+        
+    
+       
+             </fieldset>
+             
+           
+              
+ </form>
+        
+    </body>
+
+</html>
+
+
